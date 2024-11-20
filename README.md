@@ -21,7 +21,7 @@ This project demonstrates how to integrate **Firebase Admin SDK** with a **Sprin
 
 ## Installation
 1. Clone the repository:
-   git clone https://github.com/dulphyj/post-management-firebase.git
+   git clone https://github.com/yourusername/post-management.git
 
 2. Navigate to the project directory:
    cd post-management
@@ -31,19 +31,19 @@ This project demonstrates how to integrate **Firebase Admin SDK** with a **Sprin
 
 4. Download the Firebase service account key JSON file from the [Firebase Console](https://console.firebase.google.com/).
 
-5. Add your Firebase service account credentials to the project directory.
+5. Add your Firebase service account credentials to the project directory. Create a file named `private-key-firestore.json` and insert the following structure:
 
-## Running the Application
-To run the Spring Boot application locally:
-mvn spring-boot:run
-
-## Contributions
-If you'd like to contribute to this project, please follow these steps:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/new-feature`).
-3. Make your changes and commit them (`git commit -am 'Add new feature'`).
-4. Push your changes to your fork (`git push origin feature/new-feature`).
-5. Open a pull request.
-
-## License
-This project is licensed under the **MIT** License. For more details, please refer to the [LICENSE](LICENSE) file.
+```json
+{
+  "type": "service_account",
+  "project_id": "your-project-id",
+  "private_key_id": "your-private-key-id",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nyour-private-key-here\n-----END PRIVATE KEY-----\n",
+  "client_email": "your-client-email@your-project-id.iam.gserviceaccount.com",
+  "client_id": "your-client-id",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/your-client-email%40your-project-id.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
