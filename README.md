@@ -47,19 +47,24 @@ This project demonstrates how to integrate **Firebase Admin SDK** with a **Sprin
   "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/your-client-email%40your-project-id.iam.gserviceaccount.com",
   "universe_domain": "googleapis.com"
 }
-
+```
 Be sure to replace the placeholder values such as your-project-id, your-private-key-here, and other fields with your actual Firebase service account details.
 
 Running the Application
+
 To run the Spring Boot application locally: mvn spring-boot
 
 Contributions
+
 If you'd like to contribute to this project, please follow these steps:
 
 Fork the repository.
+
 Create a new branch (git checkout -b feature/new-feature).
 Make your changes and commit them (git commit -am 'Add new feature').
 Push your changes to your fork (git push origin feature/new-feature).
 Open a pull request.
+
 License
+
 This project is licensed under the MIT License. For more details, please refer to the LICENSE file.
